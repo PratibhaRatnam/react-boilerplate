@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --mode development --watch & reload -b -d public -p 4000",
+    "start": "webpack --watch & reload -b -d public -p 4000",
     "dev": "webpack --mode development --progress",
     "production": "webpack --mode production --progress"
   },
@@ -14,16 +14,18 @@
   "dependencies": {
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.18",
+    "react-router-dom": "^5.1.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10"
   },
   "devDependencies": {
+    "reload": "^3.0.4",
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
-    "babel-preset-stage-2": "^6.24.1",
-    "reload": "^3.0.4",
-    "webpack-dev-server": "^3.10.1"
+    "lodash": "^4.17.13",
+    "@babel/plugin-proposal-class-properties": "^7.8.3"
   }
 }
